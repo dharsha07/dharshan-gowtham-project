@@ -1,1 +1,33 @@
-my first web
+print(" this app helps to predict your battery health persentage of your \"Iphone\" and give descreption about your battery based on charge count")
+
+
+print("-------------------------------------------------------------------------------------------------------------------------------------------------------")
+phonemodel=int(input(" enter your Iphone series number (example:17) = "))
+if phonemodel > 14:
+    print ("find your charge count from your iphone settings and enter it below ")
+else:
+    print("you cannot find charge count in your iphone find it by using other website and enter it below") 
+chargecount=int(input("enter the charge counts of your Iphone battery = "))
+print("--------------------details about your battery----------------------------")
+if 0<=chargecount and   chargecount<=100:
+    print("your battery health percentage :your expected battery health is between 100% to 98%\n description : your Iphone is brand new to lightly used")
+elif 100<chargecount and   chargecount<=200:
+    print("your battery health percentage :your expected battery health is between 98% to 95%\n description : your iphone is normaly used,minimaly wear")
+elif 200<chargecount and  chargecount<=300:
+    print("your battery health percentage :your expected battery health is between 95% to 92%\n description : some aging is noticeable")
+elif 300<chargecount and  chargecount<=400:
+    print("your battery health percentage :your expected battery health is between 98% to 95%\n description : moderate aging is notisable")
+elif 400<chargecount and  chargecount<=500:
+    print("your battery health percentage :your expected battery health is between 95% to 92%\n description :end of apple optimal range")
+elif 500<chargecount and chargecount<=600:
+    print("your battery health percentage :your expected battery health is between 89% to 85%\n description :battery may still function but reduced peak performance")
+elif 600<chargecount and chargecount<=800:
+    print("your battery health percentage :your expected battery health is between 80% to 75%\n description : may trigger battery service message")
+elif 800<chargecount and chargecount<=1000:
+    print("your battery health percentage :your expected battery health is between 75% to 70%\n description :likely needs battery replacement")
+else:
+    print("likely wrong information given") 
+
+    
+    
+
